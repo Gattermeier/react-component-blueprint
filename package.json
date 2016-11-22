@@ -1,0 +1,50 @@
+{
+  "name": "safeimage",
+  "version": "0.0.1",
+  "description": "React Image Component with onError handling",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "./node_modules/.bin/babel ./src --out-dir ./lib",
+    "build:demo": "npm run compile && webpack --config webpack.config.github-demo.js -p --bail",
+    "deploy": "npm run build:demo && gh-pages -d example/build",
+    "prepublishOnly": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gattermeier/SafeImage.git"
+  },
+  "keywords": [
+    "react",
+    "image",
+    "component"
+  ],
+  "author": {
+    "name": "Matthias Gattermeier",
+    "email": "matthias.gattermeier@gmail.com",
+    "url": "http://www.gattermeier.net"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gattermeier/SafeImage/issues"
+  },
+  "homepage": "https://github.com/Gattermeier/SafeImage#readme",
+  "peerDependencies": {
+    "react": ">=0.15.0 <16.0.0",
+    "react-dom": ">=0.15.0 <16.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.25.0",
+    "gh-pages": "^0.11.0",
+    "html-webpack-plugin": "^2.24.1",
+    "postcss": "^5.2.5",
+    "postcss-loader": "^1.1.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "webpack": "^1.13.3"
+  }
+}
