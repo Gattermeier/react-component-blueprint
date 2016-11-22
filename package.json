@@ -1,7 +1,7 @@
 {
-  "name": "safeimage",
+  "name": "React Component Blueprint",
   "version": "0.0.1",
-  "description": "React Image Component with onError handling",
+  "description": "Quickly develop, publish and demo React Components",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
