@@ -7,7 +7,7 @@ export default class SafeImage extends Component {
   }
   render() {
     return (
-      <div></div>
+      <div>{this.props.children}</div>
     )
   }
 }
