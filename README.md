@@ -1,5 +1,5 @@
-# SafeImage
-React Image Component with onError handling
+# React Component Blueprint
+Quickly develop, publish and demo React Components
 
 ## Compile src
 ```(bash)
